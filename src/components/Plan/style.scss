@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+.work__place {
+  cursor: pointer;
+  position: relative;
+  &--free {
+    rect {
+      fill: $free;
+    }
+  }
+
+  &--isUsed {
+    rect {
+      fill: $isUsed;
+    }
+  }
+
+  &--reserved {
+    rect {
+      fill: $reserved;
+    }
+  }
+
+  &--popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    background: lightblue;
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
+}
